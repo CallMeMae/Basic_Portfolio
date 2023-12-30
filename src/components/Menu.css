@@ -1,0 +1,109 @@
+/* Menu.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+
+.menu-container {
+  position: relative;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 100;
+}
+  
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 40px; 
+  z-index: 101;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.5s;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+    color: #00bfff;
+    background-color: #222;
+  }
+  
+  .menu-item.selected {
+    color: #00bfff;
+    border-color: #00bfff;
+    overflow: hidden;
+  }
+  
+.menu-item a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: #00bfff;
+}
+
+  .menu-description {
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    font-family: 'Orbitron', sans-serif;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 102;
+  }
+  
+  .menu-description img {
+    max-width: 100%;
+    border: 3px solid #00bfff;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .menu-content {
+    padding: 20px;
+    margin-top: 20px;
+    background: #333;
+    border: 1px solid #444;
+    transition: opacity 0.5s ease;
+  }
+  
+  .fade {
+    opacity: 0;
+  }
+
+  .menu-description p {
+    color: #00bfff;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .content-area {
+    margin-top: 120px;
+    margin-left: 200px;
+    z-index: 115;
+  }
+
+  .content-area button {
+    padding: 10px 15px;
+    margin-right: 10px; /* Space between buttons */
+    background-color: #333; /* Dark background for buttons */
+    color: #fff; /* White text for buttons */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .content-area button:hover {
+    background-color: #444;
+  }

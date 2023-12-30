@@ -1,0 +1,111 @@
+/* GameStyleMenu.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .game-style-menu {
+    background: #1a1a1a;
+    border: 3px solid #3fa9f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #ccc;
+    width: 50%;
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+  
+  .character-info {
+    text-align: center;
+  }
+  
+  .character-info h2 {
+    color: #3fa9f5; /* Bright blue to stand out */
+}
+  
+  .character-info p {
+    color: #aaa;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    justify-content: center;
+}
+  
+.tab {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', cursive; /* Video game style font */
+}
+
+  
+  .tab:hover {
+    background-color: #444;
+    transform: scale(1.1);
+  }
+  
+  .tab.active {
+    background-color: #3fa9f5; /* Bright blue for active tab */
+    color: #202020;
+    transform: scale(1.05);
+    animation: blink 1s infinite;
+}
+  
+.content-display {
+    border: 3px solid #3fa9f5;
+    padding: 10px;
+    margin-top: 20px;
+}
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 2.5rem;
+  }
+  
+  .close-button:hover {
+    background: #555;
+  }
+  
+  .detail-text {
+    font-size: 1em;
+  }
+  
+  .detail-text-small {
+    font-size: 1em; 
+  }
+  
+  .index-text {
+    font-weight: bold;
+  }
+
+  /* Add custom keyframes for blinking effect */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
